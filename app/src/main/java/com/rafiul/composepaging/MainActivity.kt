@@ -34,7 +34,6 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MyApp(content: @Composable () -> Unit) {
     ComposePagingTheme {
-        // A surface container using the 'background' color from the theme
         Surface(
             modifier = Modifier.fillMaxSize(),
             color = MaterialTheme.colorScheme.background
@@ -42,12 +41,4 @@ fun MyApp(content: @Composable () -> Unit) {
             content()
         }
     }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-   MyApp {
-       Text(text = "Hello There")
-   }
 }
